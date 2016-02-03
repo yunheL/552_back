@@ -1,0 +1,13 @@
+module quadmux4_1(Out, InA, InB, InC, InD, S);
+
+  input [3:0] InA;
+  input [3:0] InB;
+  input [3:0] InC;
+  input [3:0] InD;
+  input [1:0] S;
+  output [3:0] Out;
+ 
+  mux4_1 mux4_A(.Out(Out[0]), .InA(InA[0]), .InB(InB[0]), .InC(InC[0]), .InD(InD[0]), .S(S));
+  
+
+endmodule

@@ -1,0 +1,23 @@
+module mux2_1(Out, InA, InB, S);
+
+  input InA;
+  input InB;
+  input S;
+  output Out;
+  wire Im0, Im1, Im2, Im3, inv_S, outreg, inv_outreg;
+  
+  not1 not1_0 (.in1(S),.out(inv_S));
+
+  nand2 nand2_0 (.in1(InA),.in2(inv_S),.out(Im0));
+  nand2 nand2_1 (.in1(InB),.in2(S),.out(Im1));
+
+  not1 not1_1 (.in1(Im0),.out(Im2));
+  not1 not1_2 (.in1(Im1),.out(Im3));
+
+  nor2 nor2_0 (.in1(~Im2),.in2(~Im3),.out(outreg));
+
+  not1 not1_3 (.in1(outreg),.out(inv_outreg));
+
+  assign Out = inv_outreg;
+
+endmodule 
