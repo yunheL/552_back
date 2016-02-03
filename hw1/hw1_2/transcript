@@ -12,121 +12,53 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-project open /userspace/y/yunhe/cs552/hw1/hw1_2/hw1_2
+project open /userspace/y/yunhe/552_back/hw1/hw1_2/hw1_2.mpf
 # Loading project hw1_2
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_1.v failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_1.v failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_1.v failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_1.v failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_1.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim hw1_2.FA_1
-# vsim 
-# Start time: 01:34:29 on Feb 03,2016
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.FA_1(fast)
-add wave -position insertpoint sim:/FA_1/*
-force -freeze sim:/FA_1/A 1'h0 0
-force -freeze sim:/FA_1/B 1'h0 0
-force -freeze sim:/FA_1/Cin 1'h0 0
-run
-force -freeze sim:/FA_1/A 1'h0 0
-force -freeze sim:/FA_1/B 1'h0 0
-force -freeze sim:/FA_1/Cin 1'h1 0
-run
-force -freeze sim:/FA_1/A 1'h0 0
-force -freeze sim:/FA_1/B 1'h1 0
-force -freeze sim:/FA_1/Cin 1'h0 0
-run
-force -freeze sim:/FA_1/A 1'h0 0
-force -freeze sim:/FA_1/B 1'h1 0
-force -freeze sim:/FA_1/Cin 1'h1 0
-run
-force -freeze sim:/FA_1/A 1'h1 0
-force -freeze sim:/FA_1/B 1'h0 0
-force -freeze sim:/FA_1/Cin 1'h0 0
-run
-force -freeze sim:/FA_1/A 1'h1 0
-force -freeze sim:/FA_1/B 1'h0 0
-force -freeze sim:/FA_1/Cin 1'h1 0
-run
-force -freeze sim:/FA_1/A 1'h1 0
-force -freeze sim:/FA_1/B 1'h1 0
-force -freeze sim:/FA_1/Cin 1'h0 0
-run
-force -freeze sim:/FA_1/A 1'h1 0
-force -freeze sim:/FA_1/B 1'h1 0
-force -freeze sim:/FA_1/Cin 1'h1 0
-run
-quit -sim
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_1.v was successful.
-# Compile of FA_4.v failed with 1 errors.
-# 6 compiles, 1 failed with 1 error.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
+# 0 compiles, 6 failed with no errors.
 # Compile of FA_1.v was successful.
 # Compile of FA_4.v was successful.
+# Compile of nand2.v was successful.
+# Compile of nor2.v was successful.
+# Compile of not1.v was successful.
+# Compile of xor3.v was successful.
 # 6 compiles, 0 failed with no errors.
-vsim hw1_2.FA_4
+# Compile of FA_16.v failed with 1 errors.
+# Compile of FA_1.v was successful.
+# Compile of FA_4.v was successful.
+# Compile of nand2.v was successful.
+# Compile of nor2.v was successful.
+# Compile of not1.v was successful.
+# Compile of xor3.v was successful.
+# Compile of FA_16.v was successful.
+# 7 compiles, 0 failed with no errors.
+vsim hw1_2.FA_16
 # vsim 
-# Start time: 01:48:42 on Feb 03,2016
+# Start time: 02:21:33 on Feb 03,2016
 # ** Note: (vsim-3812) Design is being optimized...
-# Loading work.FA_4(fast)
-add wave -position insertpoint sim:/FA_4/*
-force -freeze sim:/FA_4/A 4'h5 0
-force -freeze sim:/FA_4/B 4'h5 0
-force -freeze sim:/FA_4/CI 1'h1 0
+# Loading work.FA_16(fast)
+add wave -position insertpoint sim:/FA_16/*
+force -freeze sim:/FA_16/A 16'h1234 0
+force -freeze sim:/FA_16/B 16'h1234 0
+force -freeze sim:/FA_16/CI 1'h0 0
 run
-force -freeze sim:/FA_4/A 4'h5 0
-force -freeze sim:/FA_4/B 4'h5 0
-force -freeze sim:/FA_4/CI 1'h0 0
+force -freeze sim:/FA_16/A 16'h1234 0
+force -freeze sim:/FA_16/B 16'h1234 0
+force -freeze sim:/FA_16/CI 1'h1 0
 run
-force -freeze sim:/FA_4/A 4'h8 0
-force -freeze sim:/FA_4/B 4'h8 0
-force -freeze sim:/FA_4/CI 1'h0 0
+force -freeze sim:/FA_16/A 16'h0 0
+force -freeze sim:/FA_16/B 16'h0 0
+force -freeze sim:/FA_16/CI 1'h1 0
 run
-force -freeze sim:/FA_4/CI 1'h1 0
+force -freeze sim:/FA_16/A 16'h0000 0
+force -freeze sim:/FA_16/B 16'h0000 0
+force -freeze sim:/FA_16/CI 1'h0 0
 run
-force -freeze sim:/FA_4/B 4'h9 0
+force -freeze sim:/FA_16/A 16'h3333 0
+force -freeze sim:/FA_16/B 16'h3333 0
+force -freeze sim:/FA_16/CI 1'h0 0
 run
-force -freeze sim:/FA_4/B 4'hf 0
-run
-force -freeze sim:/FA_4/A 4'hf 0
-run
-force -freeze sim:/FA_4/A 4'h0 0
-run
-force -freeze sim:/FA_4/B 4'h0 0
-run
-force -freeze sim:/FA_4/CI 1'h0 0
+force -freeze sim:/FA_16/A 16'hffff 0
+force -freeze sim:/FA_16/B 16'hffff 0
+force -freeze sim:/FA_16/CI 1'h1 0
 run
 quit -sim
