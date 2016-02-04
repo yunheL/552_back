@@ -1,0 +1,30 @@
+# //  ModelSim SE-64 10.4 Dec  2 2014 Linux 3.16.0-0.bpo.4-amd64
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+project open /userspace/y/yunhe/552_back/hw1/hw1_3/hw1_3
+# Loading project hw1_3
+# Compile of clkrst.v was successful.
+# Compile of dff.v was successful.
+# Compile of statereg.v was successful.
+# Compile of statelogic.v was successful.
+# Compile of seqdec_10010111.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim hw1_3.seqdec_10010111
+# vsim 
+# Start time: 01:11:49 on Feb 04,2016
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.seqdec_10010111(fast)
+add wave -position insertpoint sim:/seqdec_10010111/*
+# End time: 01:12:42 on Feb 04,2016, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0

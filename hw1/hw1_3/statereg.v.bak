@@ -1,0 +1,16 @@
+module statereg (state, next_state, Clk, Reset);
+
+input [3:0] next_state;
+output [3:0] state;
+
+input Clk;
+input Reset;
+
+dff state_flops[3:0] (
+  .d(next_state),
+  .q(state),
+  .clk(Clk),
+  .rst(Reset)
+);
+
+endmodule
