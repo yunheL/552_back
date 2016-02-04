@@ -20,39 +20,21 @@ project open /userspace/y/yunhe/552_back/hw1/hw1_2/hw1_2.mpf
 # Compile of nor2.v was successful.
 # Compile of not1.v was successful.
 # Compile of xor3.v was successful.
-# Compile of FA_16.v was successful.
-# 7 compiles, 0 failed with no errors.
-# Compile of FA_1.v was successful.
-# Compile of FA_4.v was successful.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_16.v was successful.
 # Compile of fulladder_bench.v was successful.
 # Compile of clkrst.v was successful.
+# Compile of fulladder16.v was successful.
 # 9 compiles, 0 failed with no errors.
+vsim hw1_2.fulladder16
+# vsim 
+# Start time: 03:38:08 on Feb 04,2016
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.fulladder16(fast)
+run -all
+quit -sim
 vsim hw1_2.fulladder_bench
 # vsim 
-# Start time: 02:04:00 on Feb 04,2016
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error: /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v(14): Module 'fulladder16' is not defined.
-# Optimization failed
-# Error loading design
-# Compile of FA_1.v was successful.
-# Compile of FA_4.v was successful.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of xor3.v was successful.
-# Compile of FA_16.v was successful.
-# Compile of fulladder_bench.v was successful.
-# Compile of clkrst.v was successful.
-# 9 compiles, 0 failed with no errors.
-vsim hw1_2.fulladder_bench
-# vsim 
-# Start time: 02:05:11 on Feb 04,2016
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 03:38:58 on Feb 04,2016
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v(14): (vopt-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 4.
 # ** Warning: /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v(14): (vopt-2718) [TFMPC] - Missing connection for port 'CI'.
 # Loading work.fulladder_bench(fast)
@@ -94,4 +76,58 @@ run -all
 # 1
 # Break at /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v line 21
 quit -sim
-quit
+# Compile of FA_1.v was successful.
+# Compile of FA_4.v was successful.
+# Compile of nand2.v was successful.
+# Compile of nor2.v was successful.
+# Compile of not1.v was successful.
+# Compile of xor3.v was successful.
+# Compile of fulladder_bench.v was successful.
+# Compile of clkrst.v was successful.
+# Compile of fulladder16.v was successful.
+# 9 compiles, 0 failed with no errors.
+vsim hw1_2.fulladder_bench
+# vsim 
+# Start time: 03:40:15 on Feb 04,2016
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v(14): (vopt-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 4.
+# ** Warning: /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v(14): (vopt-2718) [TFMPC] - Missing connection for port 'CI'.
+# Loading work.fulladder_bench(fast)
+run -all
+# A : 03524, B05e81, Sum 93aX
+# A : 0d609, B05663, Sum 2c6X
+# A : 07b0d, B0998d, Sum 149X
+# A : 08465, B05212, Sum d67x
+# A : 0e301, B0cd0d, Sum b00X
+# A : 0f176, B0cd3d, Sum bebX
+# A : 057ed, B0f78c, Sum 4f7X
+# A : 0e9f9, B024c6, Sum 0eXx
+# A : 084c5, B0d2aa, Sum 57Xx
+# A : 0f7e5, B07277, Sum 6a5X
+# A : 0d612, B0db8f, Sum b1aX
+# A : 069f2, B096ce, Sum 00cX
+# A : 07ae8, B04ec5, Sum c9aX
+# A : 0495c, B028bd, Sum 721X
+# A : 0582d, B02665, Sum 7e9X
+# A : 06263, B0870a, Sum e96X
+# A : 02280, B02120, Sum 43aX
+# A : 045aa, B0cc9d, Sum 124x
+# A : 03e96, B0b813, Sum f6aX
+# A : 0380d, B0d653, Sum 0e6X
+# A : 0dd6b, B02ad5, Sum 084X
+# A : 04a02, B03eae, Sum 88bX
+# A : 0e91d, B072cf, Sum 5beX
+# A : 04923, B0650a, Sum ae2X
+# A : 00aca, B04c3c, Sum 570X
+# A : 0bdf2, B0618a, Sum 1f7X
+# A : 0b341, B034d8, Sum e81X
+# A : 0f378, B01289, Sum 060X
+# A : 00deb, B065b6, Sum 73aX
+# A : 0f9c6, B013ae, Sum 0d7X
+# A : 002bc, B0dd2a, Sum dfeX
+# A : 09a0b, B0be71, Sum 587X
+# ** Note: $finish    : /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v(21)
+#    Time: 3200 ns  Iteration: 0  Instance: /fulladder_bench
+# 1
+# Break at /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v line 21
+quit -sim

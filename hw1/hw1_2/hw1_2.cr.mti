@@ -1,30 +1,16 @@
-/userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module fulladder16
-
-Top level modules:
-	fulladder16
-
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v
+/userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
 -- Compiling module nor2
 
 Top level modules:
 	nor2
 
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder16.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder16.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module fulladder_bench
+-- Compiling module fulladder16
 
 Top level modules:
-	fulladder_bench
-
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module FA_4
-
-Top level modules:
-	FA_4
+	fulladder16
 
 } {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/not1.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/not1.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
@@ -33,12 +19,26 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
 Top level modules:
 	not1
 
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module clkrst
+-- Compiling module FA_4
 
 Top level modules:
-	clkrst
+	FA_4
+
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module fulladder_bench
+
+Top level modules:
+	fulladder_bench
+
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module nand2
+
+Top level modules:
+	nand2
 
 } {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/FA_1.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/FA_1.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
@@ -47,12 +47,12 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
 Top level modules:
 	FA_1
 
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module nand2
+-- Compiling module clkrst
 
 Top level modules:
-	nand2
+	clkrst
 
 } {} {}} /userspace/y/yunhe/552_back/hw1/hw1_2/xor3.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_2/xor3.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014

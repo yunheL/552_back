@@ -18,15 +18,15 @@ n@_opt
 Z2 OL;O;10.4;61
 R0
 T_opt1
-!s110 1454574597
-VCeeee>clSSaEEh11gV03;1
+!s110 1454579293
+VW5z;6N=[:HXcjFRfeJb`P1
 04 15 4 work seqdec_97_bench fast 0
-=1-2c27d71f977e-56b30bf3-7f064-471f
+=1-a0d3c112ce22-56b31e5c-e0121-69ab
 R1
 n@_opt1
 R2
 vclkrst
-Z3 !s110 1454574559
+Z3 !s110 1454579269
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I[lGGEh]=5]<HWHob<L=hS0
@@ -40,7 +40,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-!s108 1454574559.582919
+!s108 1454579269.230274
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v|
 !s90 -reportprogress|300|-work|hw1_3|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v|
 !i113 0
@@ -60,7 +60,7 @@ R6
 r1
 !s85 0
 31
-!s108 1454574559.671912
+!s108 1454579269.304672
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/dff.v|
 !s90 -reportprogress|300|-work|hw1_3|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/dff.v|
 !i113 0
@@ -73,38 +73,38 @@ I6>0@XCT;L:znnD<i72YAI0
 R4
 R0
 w1454573347
-Z8 8/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
-Z9 F/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
+8/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
+F/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
 L0 2
 R6
 r1
 !s85 0
 31
 !s108 1454573398.020352
-Z10 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
-Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
+!s107 /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
 !i113 0
-Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vseqdec_97
 R3
 !i10b 1
-!s100 9D7KV3<FG1NYWLSa;ngeo1
-Io:^0EJI;<;LiI3cZYRVX11
+!s100 6AAbD8NVMzYAg;G[43FPK0
+IXT[P82h4^;DLA1T2MjKHM3
 R4
 R0
-w1454573470
-R8
-R9
-L0 2
+w1454579255
+8/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97.v
+F/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97.v
+L0 3
 R6
 r1
 !s85 0
 31
-!s108 1454574559.884447
-R10
-R11
+!s108 1454579269.575462
+!s107 /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97.v|
 !i113 0
-R12
+R8
 vseqdec_97_bench
 R3
 !i10b 1
@@ -120,11 +120,11 @@ R6
 r1
 !s85 0
 31
-!s108 1454574559.952388
+!s108 1454579269.508849
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v|
 !i113 0
-R12
+R8
 vstatelogic
 R3
 !i10b 1
@@ -140,11 +140,11 @@ R6
 r1
 !s85 0
 31
-!s108 1454574559.810013
+!s108 1454579269.444813
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v|
 !i113 0
-R12
+R8
 vstatereg
 R3
 !i10b 1
@@ -160,8 +160,8 @@ R6
 r1
 !s85 0
 31
-!s108 1454574559.742318
+!s108 1454579269.390134
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v|
 !i113 0
-R12
+R8

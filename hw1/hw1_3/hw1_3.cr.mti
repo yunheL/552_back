@@ -1,16 +1,16 @@
-/userspace/y/yunhe/552_back/hw1/hw1_3/dff.v {1 {vlog -work hw1_3 -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/dff.v
-Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module dff
-
-Top level modules:
-	dff
-
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
+/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
 -- Compiling module seqdec_97
 
 Top level modules:
 	seqdec_97
+
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/dff.v {1 {vlog -work hw1_3 -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/dff.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module dff
+
+Top level modules:
+	dff
 
 } {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014

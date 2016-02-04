@@ -12,17 +12,8 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-project open /userspace/y/yunhe/552_back/hw1/hw1_1/hw1_1
+project open /userspace/y/yunhe/552_back/hw1/hw1_1/hw1_1.mpf
 # Loading project hw1_1
-# Compile of mux2_1.v was successful.
-# Compile of mux4_1.v was successful.
-# Compile of nand2.v was successful.
-# Compile of nor2.v was successful.
-# Compile of not1.v was successful.
-# Compile of quadmux4_1.v was successful.
-# Compile of quadmux4_1_bench.v was successful.
-# 7 compiles, 0 failed with no errors.
-# Compile of clkrst.v was successful.
 # Compile of mux2_1.v was successful.
 # Compile of mux4_1.v was successful.
 # Compile of nand2.v was successful.
@@ -34,8 +25,8 @@ project open /userspace/y/yunhe/552_back/hw1/hw1_1/hw1_1
 # 8 compiles, 0 failed with no errors.
 vsim hw1_1.quadmux4_1_bench
 # vsim 
-# Start time: 01:57:12 on Feb 04,2016
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 03:42:17 on Feb 04,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.quadmux4_1_bench(fast)
 run -all
 # ** Note: $finish    : /userspace/y/yunhe/552_back/hw1/hw1_1/quadmux4_1_bench.v(47)
@@ -43,3 +34,4 @@ run -all
 # 1
 # Break at /userspace/y/yunhe/552_back/hw1/hw1_1/quadmux4_1_bench.v line 47
 quit -sim
+quit

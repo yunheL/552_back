@@ -9,18 +9,18 @@ z2
 cModel Technology
 Z0 d/userspace/y/yunhe/cs552/hw1/hw1_2
 T_opt
-!s110 1454573112
-V?cDi1aLNNC;WN^Lof>B7O2
+!s110 1454578834
+VUUXKMO6F6hgLU;8k3@<Pi3
 04 15 4 work fulladder_bench fast 0
-=1-2c27d71f977e-56b30638-19a31-3bf9
+=1-a0d3c112ce22-56b31c7f-d8bcd-64df
 Z1 o-quiet -auto_acc_if_foreign -work hw1_2
 n@_opt
 Z2 OL;O;10.4;61
 T_opt1
-!s110 1454485723
-VNf;jb=Re[mPknkRDKak@z0
-04 4 4 work FA_4 fast 0
-=1-2c27d71f977e-56b1b0da-ee218-158b
+!s110 1454578688
+V9MSi=PcNI2g]97RkW29RV3
+04 11 4 work fulladder16 fast 0
+=1-a0d3c112ce22-56b31c00-71982-63ce
 R1
 n@_opt1
 R2
@@ -35,205 +35,205 @@ n@_opt2
 R2
 R0
 vclkrst
-!s110 1454573098
+Z3 !s110 1454578804
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I^=;MAN?<f53C9e9GJM64B0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 d/userspace/y/yunhe/552_back/hw1/hw1_2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 d/userspace/y/yunhe/552_back/hw1/hw1_2
 w1453157725
 8/userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v
 L0 12
-Z5 OL;L;10.4;61
+Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-!s108 1454573097.990795
+!s108 1454578804.211585
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/clkrst.v|
 !i113 0
-Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vFA_1
-Z7 !s110 1454573097
+Z8 !s110 1454578803
 !i10b 1
 !s100 U=z_aX?o;jKT9XBD>keAE1
 I@0`>[1Ui]OXA^2ZkUG0YZ1
-R3
 R4
-Z8 w1454486820
+R5
+Z9 w1454486820
 8/userspace/y/yunhe/552_back/hw1/hw1_2/FA_1.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/FA_1.v
 L0 1
-R5
+R6
 r1
 !s85 0
 31
-!s108 1454573097.416488
+!s108 1454578803.818005
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/FA_1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/FA_1.v|
 !i113 0
-R6
+R7
 n@f@a_1
 vFA_16
 !s110 1454573025
 !i10b 1
 !s100 <YZ;4YlIb8bl6^G[AXii43
 I=83L=eI9MKUIHBfNF^:6h3
-R3
 R4
-w1454487654
-Z9 8/userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v
-Z10 F/userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v
-L0 1
 R5
+w1454487654
+8/userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v
+F/userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v
+L0 1
+R6
 r1
 !s85 0
 31
 !s108 1454573025.882742
-Z11 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v|
-Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v|
+!s107 /userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/FA_16.v|
 !i113 0
-R6
+R7
 n@f@a_16
 vFA_4
-R7
+R8
 !i10b 1
 !s100 7_VakTBIDKe:LF1fS_CCz0
 IJPVCS`j8Nd:]bVe@Gi@4b2
-R3
 R4
-R8
+R5
+R9
 8/userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v
 L0 1
-R5
+R6
 r1
 !s85 0
 31
-!s108 1454573097.510174
+!s108 1454578803.885630
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/FA_4.v|
 !i113 0
-R6
+R7
 n@f@a_4
 vfulladder16
-R7
-!i10b 1
-!s100 AS1h[I`o:J>ULfl<D6;]d2
-IUz9NUN0Mf=B3TiV6hPSai3
 R3
+!i10b 1
+!s100 6Kg]^_f8>2`Z=ShiJ]Ola0
+IWWzY4aRScMAm6N4;3TKW?2
 R4
-w1454573073
-R9
-R10
-L0 1
 R5
+w1454578797
+8/userspace/y/yunhe/552_back/hw1/hw1_2/fulladder16.v
+F/userspace/y/yunhe/552_back/hw1/hw1_2/fulladder16.v
+L0 2
+R6
 r1
 !s85 0
 31
-!s108 1454573097.855313
-R11
-R12
+!s108 1454578804.259901
+!s107 /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/fulladder16.v|
 !i113 0
-R6
-vfulladder_bench
 R7
+vfulladder_bench
+R3
 !i10b 1
 !s100 ?WfOFOAg@jY4WZOT0NQOS2
 IU;]Ekb[?zo<K673ibK1z81
-R3
 R4
+R5
 w1454572862
 8/userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v
 L0 1
-R5
+R6
 r1
 !s85 0
 31
-!s108 1454573097.918859
+!s108 1454578804.162312
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/fulladder_bench.v|
 !i113 0
-R6
-vnand2
 R7
+vnand2
+R8
 !i10b 1
 !s100 ISa?1STS90[eV_=8949@R1
 I^2`DQlVkI1PQ0;3^LjgL@2
-R3
 R4
-R8
+R5
+R9
 8/userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v
 L0 1
-R5
+R6
 r1
 !s85 0
 31
-!s108 1454573097.581443
+!s108 1454578803.943593
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/nand2.v|
 !i113 0
-R6
-vnor2
 R7
+vnor2
+R3
 !i10b 1
 !s100 SNK[jK6955=m0Zbh6gQU`3
 IMR`^]0UlQ]F@4DbF>X0dL3
-R3
 R4
-R8
+R5
+R9
 8/userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v
 L0 1
-R5
+R6
 r1
 !s85 0
 31
-!s108 1454573097.644496
+!s108 1454578803.991120
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/nor2.v|
 !i113 0
-R6
-vnot1
 R7
+vnot1
+R3
 !i10b 1
 !s100 KWFGS]d0`N730YhRHI;lF1
 Id6Y95<ZLm<^`zKBizE@jS3
-R3
 R4
-R8
+R5
+R9
 8/userspace/y/yunhe/552_back/hw1/hw1_2/not1.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/not1.v
 L0 1
-R5
+R6
 r1
 !s85 0
 31
-!s108 1454573097.716857
+!s108 1454578804.038652
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/not1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/not1.v|
 !i113 0
-R6
-vxor3
 R7
+vxor3
+R3
 !i10b 1
 !s100 ^m3LI@GI`OB<lWUWmm]G23
 I3O2PaXhVM[X:53lM;FMe91
-R3
 R4
-R8
+R5
+R9
 8/userspace/y/yunhe/552_back/hw1/hw1_2/xor3.v
 F/userspace/y/yunhe/552_back/hw1/hw1_2/xor3.v
 L0 1
-R5
+R6
 r1
 !s85 0
 31
-!s108 1454573097.787633
+!s108 1454578804.087347
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_2/xor3.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_2/xor3.v|
 !i113 0
-R6
+R7
