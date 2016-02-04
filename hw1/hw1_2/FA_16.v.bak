@@ -1,4 +1,4 @@
-module FA_16(S, CO, A, B, CI);
+module FA_16(SUM, CO, A, B, CI);
 
   input [15:0] A;
   input [15:0] B;

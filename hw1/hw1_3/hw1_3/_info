@@ -13,106 +13,155 @@ T_opt
 VgJl;TEaWR8dV64I@>j;BZ2
 04 15 4 work seqdec_10010111 fast 0
 =1-a0d3c10bf467-56b2f9b5-f161c-53d4
-o-quiet -auto_acc_if_foreign -work hw1_3
+Z1 o-quiet -auto_acc_if_foreign -work hw1_3
 n@_opt
-OL;O;10.4;61
+Z2 OL;O;10.4;61
+R0
+T_opt1
+!s110 1454574597
+VCeeee>clSSaEEh11gV03;1
+04 15 4 work seqdec_97_bench fast 0
+=1-2c27d71f977e-56b30bf3-7f064-471f
+R1
+n@_opt1
+R2
 vclkrst
-Z1 !s110 1454569899
+Z3 !s110 1454574559
 !i10b 1
 !s100 d1=HFa9@5T7JH2L8mb3gE1
 I[lGGEh]=5]<HWHob<L=hS0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1453157725
+Z5 w1453157725
 8/userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v
 F/userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v
 L0 12
-Z4 OL;L;10.4;61
+Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-!s108 1454569899.799680
+!s108 1454574559.582919
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v|
 !s90 -reportprogress|300|-work|hw1_3|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v|
 !i113 0
-Z5 o-work hw1_3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 o-work hw1_3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vdff
-R1
+R3
 !i10b 1
 !s100 ocZMMJaQcW@V^7b`LBG;g2
 IbV<hKK^hlV0_BHl0[f?7Z1
-R2
+R4
 R0
-R3
+R5
 8/userspace/y/yunhe/552_back/hw1/hw1_3/dff.v
 F/userspace/y/yunhe/552_back/hw1/hw1_3/dff.v
 L0 6
-R4
+R6
 r1
 !s85 0
 31
-!s108 1454569899.875030
+!s108 1454574559.671912
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/dff.v|
 !s90 -reportprogress|300|-work|hw1_3|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/dff.v|
 !i113 0
-R5
+R7
 vseqdec_10010111
-Z6 !s110 1454569900
+!s110 1454573398
 !i10b 1
-!s100 hL<]ODAhXi52WQGd4<Ie92
-IzR1VlCLR9Y@7@Gl;H9bKg3
-R2
-R0
-w1454569849
-8/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
-F/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
-L0 1
+!s100 LQO^^W`iP?l5<DYdX2jRj2
+I6>0@XCT;L:znnD<i72YAI0
 R4
+R0
+w1454573347
+Z8 8/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
+Z9 F/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
+L0 2
+R6
 r1
 !s85 0
 31
-!s108 1454569900.034442
-!s107 /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
+!s108 1454573398.020352
+Z10 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v|
 !i113 0
-Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-vstatelogic
-R6
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vseqdec_97
+R3
 !i10b 1
-!s100 P^Sakn_8o@FnNMZ05SRCi2
-IS_GeN=zhP`^:n;nEiXQQ:1
-R2
+!s100 9D7KV3<FG1NYWLSa;ngeo1
+Io:^0EJI;<;LiI3cZYRVX11
+R4
 R0
-w1454569691
+w1454573470
+R8
+R9
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1454574559.884447
+R10
+R11
+!i113 0
+R12
+vseqdec_97_bench
+R3
+!i10b 1
+!s100 h:gGaeF[1mojR3d=RkJ<D3
+IKY:]i;kdaA2DM2z]lb4dP1
+R4
+R0
+w1454573293
+8/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v
+F/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1454574559.952388
+!s107 /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v|
+!i113 0
+R12
+vstatelogic
+R3
+!i10b 1
+!s100 Sn>MAH^U5nW9oJ_m6_Y=L0
+I60Gbl;cZ35R]3kdY7@DWi3
+R4
+R0
+w1454574540
 8/userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v
 F/userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v
 L0 3
-R4
+R6
 r1
 !s85 0
 31
-!s108 1454569899.981397
+!s108 1454574559.810013
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v|
 !i113 0
-R7
+R12
 vstatereg
-R1
+R3
 !i10b 1
 !s100 2<IoSXQC<]`lEl9J:W0Zj3
 I`z4CJ10lgK<Q21bU?24E13
-R2
+R4
 R0
 w1454560238
 8/userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v
 F/userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v
 L0 3
-R4
+R6
 r1
 !s85 0
 31
-!s108 1454569899.929105
+!s108 1454574559.742318
 !s107 /userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v|
 !i113 0
-R7
+R12

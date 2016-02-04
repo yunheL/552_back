@@ -1,4 +1,5 @@
-module seqdec_10010111 (InA, Clk, Reset, Out);
+//id last digit = 6, sequence = 97
+module seqdec_97 (InA, Clk, Reset, Out);
 
 input Clk;
 input Reset;

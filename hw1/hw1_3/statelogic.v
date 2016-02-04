@@ -69,7 +69,7 @@ begin
     //input 1, goto state7
     5'b0_0110:
       next_state <= 4'b0010;
-    5'b1_0000:
+    5'b1_0110:
       next_state <= 4'b0111;
 
     //state7
@@ -84,9 +84,9 @@ begin
     //input 0, goto state2
     //input 1, goto state1
     5'b0_1000:
-      next_state <= 4'b0001;
-    5'b1_1000:
       next_state <= 4'b0010;
+    5'b1_1000:
+      next_state <= 4'b0001;
     
     default:
       next_state <= {4{1'bx}};

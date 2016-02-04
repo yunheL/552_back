@@ -1,0 +1,19 @@
+$date
+	Thu Feb  4 02:30:35 2016
+$end
+$version
+	ModelSim Version 10.4
+$end
+$timescale
+	1ns
+$end
+
+$scope module seqdec_97_bench $end
+
+$scope module my_ckrst $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end

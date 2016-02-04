@@ -12,7 +12,7 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-project open /userspace/y/yunhe/552_back/hw1/hw1_3/hw1_3
+project open /userspace/y/yunhe/552_back/hw1/hw1_3/hw1_3.mpf
 # Loading project hw1_3
 # Compile of clkrst.v was successful.
 # Compile of dff.v was successful.
@@ -20,11 +20,88 @@ project open /userspace/y/yunhe/552_back/hw1/hw1_3/hw1_3
 # Compile of statelogic.v was successful.
 # Compile of seqdec_10010111.v was successful.
 # 5 compiles, 0 failed with no errors.
-vsim hw1_3.seqdec_10010111
+# Compile of clkrst.v was successful.
+# Compile of dff.v was successful.
+# Compile of statereg.v was successful.
+# Compile of statelogic.v was successful.
+# Compile of seqdec_10010111.v was successful.
+# Compile of seqdec_97_bench.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of clkrst.v was successful.
+# Compile of dff.v was successful.
+# Compile of statereg.v was successful.
+# Compile of statelogic.v was successful.
+# Compile of seqdec_10010111.v was successful.
+# Compile of seqdec_97_bench.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of clkrst.v was successful.
+# Compile of dff.v was successful.
+# Compile of statereg.v was successful.
+# Compile of statelogic.v was successful.
+# Compile of seqdec_10010111.v was successful.
+# Compile of seqdec_97_bench.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim hw1_3.seqdec_97_bench
 # vsim 
-# Start time: 01:11:49 on Feb 04,2016
+# Start time: 02:12:18 on Feb 04,2016
 # ** Note: (vsim-3812) Design is being optimized...
-# Loading work.seqdec_10010111(fast)
-add wave -position insertpoint sim:/seqdec_10010111/*
-# End time: 01:12:42 on Feb 04,2016, Elapsed time: 0:00:53
-# Errors: 0, Warnings: 0
+# Loading work.seqdec_97_bench(fast)
+run -all
+# ERRORCHECK :: Out not going to 1 as expected
+# ERRORCHECK :: Out not going to 1 as expected
+# ERRORCHECK :: Out not going to 1 as expected
+# ** Note: $finish    : /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v(36)
+#    Time: 13 us  Iteration: 1  Instance: /seqdec_97_bench
+# 1
+# Break at /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v line 36
+quit -sim
+vsim hw1_3.seqdec_97_bench
+# vsim 
+# Start time: 02:15:55 on Feb 04,2016
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.seqdec_97_bench(fast)
+# Compile of clkrst.v was successful.
+# Compile of dff.v was successful.
+# Compile of statereg.v was successful.
+# Compile of statelogic.v was successful.
+# Compile of seqdec_10010111.v was successful.
+# Compile of seqdec_97_bench.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim hw1_3.seqdec_97_bench
+# vsim 
+# Start time: 02:26:52 on Feb 04,2016
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.seqdec_97_bench(fast)
+run -all
+# ERRORCHECK :: Out not going to 1 as expected
+# ** Note: $finish    : /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v(36)
+#    Time: 13 us  Iteration: 1  Instance: /seqdec_97_bench
+# 1
+# Break at /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v line 36
+quit -sim
+# Compile of clkrst.v was successful.
+# Compile of dff.v was successful.
+# Compile of statereg.v was successful.
+# Compile of statelogic.v was successful.
+# Compile of seqdec_10010111.v was successful.
+# Compile of seqdec_97_bench.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of clkrst.v was successful.
+# Compile of dff.v was successful.
+# Compile of statereg.v was successful.
+# Compile of statelogic.v was successful.
+# Compile of seqdec_10010111.v was successful.
+# Compile of seqdec_97_bench.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim hw1_3.seqdec_97_bench
+# vsim 
+# Start time: 02:29:39 on Feb 04,2016
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.seqdec_97_bench(fast)
+run -all
+# ** Note: $finish    : /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v(36)
+#    Time: 13 us  Iteration: 1  Instance: /seqdec_97_bench
+# 1
+# Break at /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v line 36
+quit -sim

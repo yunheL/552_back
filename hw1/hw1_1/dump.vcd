@@ -1,0 +1,19 @@
+$date
+	Thu Feb  4 01:57:25 2016
+$end
+$version
+	ModelSim Version 10.4
+$end
+$timescale
+	1ns
+$end
+
+$scope module quadmux4_1_bench $end
+
+$scope module my_clkrst $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end

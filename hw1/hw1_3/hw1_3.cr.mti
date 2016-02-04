@@ -7,17 +7,24 @@ Top level modules:
 
 } {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_10010111.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module seqdec_10010111
+-- Compiling module seqdec_97
 
 Top level modules:
-	seqdec_10010111
+	seqdec_97
 
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v {1 {vlog -work hw1_3 -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module clkrst
+-- Compiling module statelogic
 
 Top level modules:
-	clkrst
+	statelogic
+
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/seqdec_97_bench.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module seqdec_97_bench
+
+Top level modules:
+	seqdec_97_bench
 
 } {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/statereg.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
@@ -26,11 +33,11 @@ Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
 Top level modules:
 	statereg
 
-} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v {1 {vlog -work work -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/statelogic.v
+} {} {}} /userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v {1 {vlog -work hw1_3 -vopt -stats=none /userspace/y/yunhe/552_back/hw1/hw1_3/clkrst.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
--- Compiling module statelogic
+-- Compiling module clkrst
 
 Top level modules:
-	statelogic
+	clkrst
 
 } {} {}}
