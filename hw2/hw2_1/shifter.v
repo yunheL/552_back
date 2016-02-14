@@ -25,8 +25,19 @@ module shifter (In, Cnt, Op, Out);
      cntreg = Cnt;
 
     case (Op)
-  	  2'b00	:	outreg = inreg;
-	  2'b01	:	outreg = inreg; 
+
+ 	  //rotate left
+  	  2'b00	:	
+		begin
+	             	e = cntreg[0] ? {inreg[14:0],inreg[15]}	:	inreg;
+             		d = cntreg[1] ? {e[13:0], e[15:14]}	: 	e;
+             		c = cntreg[2] ? {d[11:0],d[15:12]} 	: 	d;
+             		outreg = cntreg[3] ? {c[7:0], d[15:8]} : 	c;          
+		end
+
+	  2'b01	:
+
+
           //shift right arthimatic: discard "drop out"
           //on the right and extend sign bit on the left
           2'b10 :
