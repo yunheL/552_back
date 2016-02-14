@@ -12,33 +12,6 @@
 # Loading __work.clkrst
 # Loading __work.shifter
 run -all
-# ERRORCHECK :: Shifter :: Shift Left        : Count :  1, In = 3524 ; Expected : 6a48, Got 3524
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 13, In = 5663 ; Expected : 6000, Got 5663
-# ERRORCHECK :: Shifter :: Shift Left        : Count :  2, In = 8465 ; Expected : 1194, Got 8465
-# ERRORCHECK :: Shifter :: Shift Left        : Count :  6, In = cd0d ; Expected : 4340, Got cd0d
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 12, In = 57ed ; Expected : d000, Got 57ed
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 13, In = 28bd ; Expected : a000, Got 28bd
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 10, In = 2120 ; Expected : 8000, Got 2120
-# ERRORCHECK :: Shifter :: Shift Left        : Count :  3, In = 3e96 ; Expected : f4b0, Got 3e96
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 11, In = d653 ; Expected : 9800, Got d653
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 14, In = 4a02 ; Expected : 8000, Got 4a02
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count :  9, In = f378 ; Expected : 0079, Got f378
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count : 10, In = 02bc ; Expected : 0000, Got 02bc
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count :  5, In = be71 ; Expected : 05f3, Got be71
-# ERRORCHECK :: Shifter :: Shift Left        : Count :  1, In = 4b15 ; Expected : 962a, Got 4b15
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count : 12, In = 0762 ; Expected : 0000, Got 0762
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count :  8, In = a18f ; Expected : 00a1, Got a18f
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count : 12, In = 569f ; Expected : 0005, Got 569f
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 13, In = 007e ; Expected : c000, Got 007e
-# ERRORCHECK :: Shifter :: Shift Left        : Count :  3, In = 8f1f ; Expected : 78f8, Got 8f1f
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 11, In = 8878 ; Expected : c000, Got 8878
-# ERRORCHECK :: Shifter :: Rotate Left       : Count : 14, In = 3886 ; Expected : 8e21, Got 8ee2
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count :  6, In = 99fa ; Expected : 0267, Got 99fa
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count : 15, In = b4a3 ; Expected : 0001, Got b4a3
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count :  4, In = 565f ; Expected : 0565, Got 565f
-# ERRORCHECK :: Shifter :: Right Left Logic  : Count :  5, In = b665 ; Expected : 05b3, Got b665
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 10, In = addc ; Expected : 7000, Got addc
-# ERRORCHECK :: Shifter :: Shift Left        : Count : 11, In = ca59 ; Expected : c800, Got ca59
-# TEST FAILED
+# TEST PASSED
 # ** Note: $finish    : shifter_hier_bench.v(27)
 #    Time: 5 us  Iteration: 0  Instance: /shifter_hier_bench

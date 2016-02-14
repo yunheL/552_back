@@ -32,10 +32,19 @@ module shifter (In, Cnt, Op, Out);
 	             	e = cntreg[0] ? {inreg[14:0],inreg[15]}	:	inreg;
              		d = cntreg[1] ? {e[13:0], e[15:14]}	: 	e;
              		c = cntreg[2] ? {d[11:0],d[15:12]} 	: 	d;
-             		outreg = cntreg[3] ? {c[7:0], d[15:8]} : 	c;          
+             		outreg = cntreg[3] ? {c[7:0], c[15:8]} : 	c;          
 		end
 
+	  //shift left
+	  //bits "drop off" on the left, extend 0 on the right
 	  2'b01	:
+		begin
+	             	e = cntreg[0] ? {inreg[14:0],1'b0}	:	inreg;
+             		d = cntreg[1] ? {e[13:0], {2{1'b0}}}	: 	e;
+             		c = cntreg[2] ? {d[11:0],{4{1'b0}}} 	: 	d;
+             		outreg = cntreg[3] ? {c[7:0], {8{1'b0}}}: 	c;          
+		end
+
 
 
           //shift right arthimatic: discard "drop out"
@@ -47,7 +56,17 @@ module shifter (In, Cnt, Op, Out);
              		c = cntreg[2] ? {{4{d[15]}},d[15:4]} 	: 	d;
              		outreg = cntreg[3] ? {{8{c[15]}},c[15:8]} : 	c;          
 		end
-	  2'b11	:	outreg = inreg;
+
+          //shift righ logic: discard drop out on the right; extend 0 on left
+	  2'b11	:
+		begin
+	             	e = cntreg[0] ? {1'b0,inreg[15:1]}	:	inreg;
+             		d = cntreg[1] ? {{2{1'b0}}, e[15:2]}	: 	e;
+             		c = cntreg[2] ? {{4{1'b0}},d[15:4]} 	: 	d;
+             		outreg = cntreg[3] ? {{8{1'b0}}, c[15:8]}: 	c;          
+		end
+
+
 	  default:	outreg = inreg;
       endcase
     end
