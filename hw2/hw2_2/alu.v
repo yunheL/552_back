@@ -43,21 +43,24 @@ module alu (A, B, Cin, Op, invA, invB, sign, Out, Ofl, Z);
     Ofl = 1'b0;
     case (Op[2])
       1'b0: Out = shiftOut;
-      1'b1:begin
-        case (Op[1:0])
-          2'b00:
-          begin
-            case(sign)
-              1'b0:  Ofl = cout;
-              1'b1:  Ofl = ((~(opA[15]^opB[15]))^sumOut[15])? 1'b1:1'b0;
-            endcase
-            Out = sumOut;
-          end
-          2'b01: Out = {opA[15]|opB[15],opA[14]|opB[14],opA[13]|opB[13],opA[12]|opB[12],opA[11]|opB[11],opA[10]|opB[10],opA[9]|opB[9],opA[8]|opB[8],opA[7]|opB[7],opA[6]|opB[6],opA[5]|opB[5],opA[4]|opB[4],opA[3]|opB[3],opA[2]|opB[2],opA[1]|opB[1],opA[0]|opB[0]};
-          2'b10: Out = {opA[15]^opB[15],opA[14]^opB[14],opA[13]^opB[13],opA[12]^opB[12],opA[11]^opB[11],opA[10]^opB[10],opA[9]^opB[9],opA[8]^opB[8],opA[7]^opB[7],opA[6]^opB[6],opA[5]^opB[5],opA[4]^opB[4],opA[3]^opB[3],opA[2]^opB[2],opA[1]^opB[1],opA[0]^opB[0]};
-          2'b11: Out = {opA[15]&opB[15],opA[14]&opB[14],opA[13]&opB[13],opA[12]&opB[12],opA[11]&opB[11],opA[10]&opB[10],opA[9]&opB[9],opA[8]&opB[8],opA[7]&opB[7],opA[6]&opB[6],opA[5]&opB[5],opA[4]&opB[4],opA[3]&opB[3],opA[2]&opB[2],opA[1]&opB[1],opA[0]&opB[0]};
-        endcase
-      end
+      1'b1:
+        always @*
+        begin
+          case (Op[1:0])
+            2'b00:
+              always @*
+              begin
+                case(sign)
+                  1'b0:  Ofl = cout;
+                  1'b1:  Ofl = ((~(opA[15]^opB[15]))^sumOut[15])? 1'b1:1'b0;
+                endcase
+               Out = sumOut;
+              end
+            2'b01: Out = {opA[15]|opB[15],opA[14]|opB[14],opA[13]|opB[13],opA[12]|opB[12],opA[11]|opB[11],opA[10]|opB[10],opA[9]|opB[9],opA[8]|opB[8],opA[7]|opB[7],opA[6]|opB[6],opA[5]|opB[5],opA[4]|opB[4],opA[3]|opB[3],opA[2]|opB[2],opA[1]|opB[1],opA[0]|opB[0]};
+            2'b10: Out = {opA[15]^opB[15],opA[14]^opB[14],opA[13]^opB[13],opA[12]^opB[12],opA[11]^opB[11],opA[10]^opB[10],opA[9]^opB[9],opA[8]^opB[8],opA[7]^opB[7],opA[6]^opB[6],opA[5]^opB[5],opA[4]^opB[4],opA[3]^opB[3],opA[2]^opB[2],opA[1]^opB[1],opA[0]^opB[0]};
+            2'b11: Out = {opA[15]&opB[15],opA[14]&opB[14],opA[13]&opB[13],opA[12]&opB[12],opA[11]&opB[11],opA[10]&opB[10],opA[9]&opB[9],opA[8]&opB[8],opA[7]&opB[7],opA[6]&opB[6],opA[5]&opB[5],opA[4]&opB[4],opA[3]&opB[3],opA[2]&opB[2],opA[1]&opB[1],opA[0]&opB[0]};
+          endcase
+        end
       default:Out = shiftOut;
     endcase
   end

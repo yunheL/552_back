@@ -1,3 +1,4 @@
+# vsim -lib __work -c alu_hier_bench 
 # //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
 # //
 # //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
@@ -6,5 +7,14 @@
 # //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
 # //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
 # //
-# vsim -view dataset=dump.wlf 
-# dump.wlf opened as dataset "dataset"
+# Loading __work.alu_hier_bench
+# Loading __work.alu_hier
+# ** Error: (vsim-3033) alu_hier.v(26): Instantiation of 'clkrst' failed. The design unit was not found.
+#         Region: /alu_hier_bench/DUT
+#         Searched libraries:
+#             __work
+# ** Error: (vsim-3033) alu_hier.v(41): Instantiation of 'alu' failed. The design unit was not found.
+#         Region: /alu_hier_bench/DUT
+#         Searched libraries:
+#             __work
+# Error loading design
