@@ -1,0 +1,7 @@
+alu.v 
+CLA16.v
+CLA4.v  
+incrementer16.v 
+incrementer4.v 
+pfa.v
+shifter.v
