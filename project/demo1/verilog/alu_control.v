@@ -12,7 +12,7 @@ mdule alu_control(
   opcode,
   func
   immd
-)
+);
 
   output[2:0] alu_op;
   output inv_b;
