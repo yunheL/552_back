@@ -6,6 +6,7 @@ mdule alu_control(
   shamt,
   flip_1,
   flip_2,
+  shift,
 
   //input
   opcode,
@@ -19,7 +20,8 @@ mdule alu_control(
   output [3:0] shamt;
   output flip_1;
   output flip_2; 
- 
+  output shift; 
+
   input [4:0] opcode;
   input [1:0] func;
   input [3:0] immd;
@@ -33,6 +35,7 @@ mdule alu_control(
     shamt = 4'b0000;
     flip_1 = 1'b0;
     flip_2 = 1'b0;
+    shift = 1'b0;
 
     case(opcode)
 			5'b01000 : //ADDI
@@ -43,7 +46,8 @@ mdule alu_control(
     		shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
-			end      
+		    shift = 1'b0;
+		end      
 
 	    5'b01001 : //SUBI
 		  begin
@@ -53,7 +57,8 @@ mdule alu_control(
         shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
-			end      
+		    shift = 1'b0;
+		end      
 
       5'b01010 : //XORI
 			begin
@@ -63,7 +68,8 @@ mdule alu_control(
         shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
-			end
+		    shift = 1'b0;
+		end
 
 			5'b01011 : //ANDNI
 			begin
@@ -73,7 +79,8 @@ mdule alu_control(
         shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
-			end
+		    shift = 1'b0;
+		end
 
       5'b01001 : //ROLI
 			begin
@@ -83,7 +90,8 @@ mdule alu_control(
 				shamt = immd;
   	    flip_1 = 1'b0;
       	flip_2 = 1'b0;
-    	end
+ 		    shift = 1'b1;
+	   	end
 
       5'b01010 : //SLLI
 			begin
@@ -93,6 +101,7 @@ mdule alu_control(
 				shamt = immd;
 	    	flip_1 = 1'b0;
 				flip_2 = 1'b0;
+ 		    shift = 1'b1;
 			end
 
       5'b10110 : //RORI
@@ -103,6 +112,7 @@ mdule alu_control(
 				shamt = 4'b0000;
 	    	flip_1 = 1'b1;
       	flip_2 = 1'b1;
+ 		    shift = 1'b1;
 			end
 
       5'b10110 : //SRLI
@@ -113,6 +123,7 @@ mdule alu_control(
 				shamt = immd;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b1;
 			end
 
       5'b10110 : //ST
@@ -123,6 +134,7 @@ mdule alu_control(
 				shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end
 
       5'b10110 : //LD
@@ -133,6 +145,7 @@ mdule alu_control(
 				shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end
 
       5'b10110 : //STU
@@ -143,6 +156,7 @@ mdule alu_control(
 				shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end
 
 			5'b11011 : //ADD, SUB, XOR, ANDN
@@ -157,6 +171,7 @@ mdule alu_control(
 							shamt = 4'b0000;
 							flip_1 = 1'b0;
 							flip_1 = 1'b0;
+ 		    			shift = 1'b0;
 						end
 
 					2'b01 : //SUB
@@ -167,6 +182,7 @@ mdule alu_control(
 							shamt = 4'b0000;
 							flip_1 = 1'b0;
 							flip_1 = 1'b0;
+ 		    			shift = 1'b0;
 						end
 
 					2'b10 : //XOR
@@ -177,6 +193,7 @@ mdule alu_control(
 							shamt = 4'b0000;
 							flip_1 = 1'b0;
 							flip_1 = 1'b0;
+ 		    			shift = 1'b0;
 						end
 
 					2'b11 : //ANDN
@@ -187,6 +204,7 @@ mdule alu_control(
 							shamt = 4'b0000;
 							flip_1 = 1'b0;
 							flip_1 = 1'b0;
+ 		    			shift = 1'b0;
 						end
 					endcase
 			end
@@ -203,6 +221,7 @@ mdule alu_control(
 							shamt = immd;
 							flip_1 = 1'b0;
 							flip_1 = 1'b0;
+ 		    			shift = 1'b1;
 						end
 
 					2'b01 : //SLL
@@ -213,6 +232,7 @@ mdule alu_control(
 							shamt = immd;
 							flip_1 = 1'b0;
 							flip_1 = 1'b0;
+ 		    			shift = 1'b1;
 						end
 
 					2'b10 : //ROR
@@ -223,6 +243,7 @@ mdule alu_control(
 							shamt = immd;
 							flip_1 = 1'b1;
 							flip_1 = 1'b1;
+ 		    			shift = 1'b1;
 						end
 
 					2'b11 : //SRL
@@ -233,6 +254,7 @@ mdule alu_control(
 							shamt = immd;
 							flip_1 = 1'b0;
 							flip_1 = 1'b0;
+ 		    			shift = 1'b1;
 						end
 					endcase
 			end
@@ -245,6 +267,7 @@ mdule alu_control(
     		shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end      
 
 	    5'b11101 : //SLT
@@ -255,6 +278,7 @@ mdule alu_control(
         shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end      
 
       5'b11110 : //SLE
@@ -265,6 +289,7 @@ mdule alu_control(
         shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end
 
 			5'b11111 : //SCO	
@@ -275,6 +300,7 @@ mdule alu_control(
         shamt = 4'b0000;
 	    	flip_1 = 1'b0;
       	flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end
 
 			default : 
@@ -285,6 +311,7 @@ mdule alu_control(
     		shamt = 4'b0000;
     		flip_1 = 1'b0;
     		flip_2 = 1'b0;
+ 		    shift = 1'b0;
 			end
 
     endcase
