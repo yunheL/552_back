@@ -23,6 +23,16 @@ module proc (/*AUTOARG*/
    
    
    /* your code here */
+   //PC & Fetch
+   //Decode
+   //Reg
+   //ALU
+   //ALU control
+   //MEM
+   //Control
+   //JUMP Branch (ALU)
+
+  /* your code here */
    
 endmodule // proc
 // DUMMY LINE FOR REV CONTROL :0:
