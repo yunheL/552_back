@@ -14,23 +14,24 @@ module control(
 	MemWrite,
 	ALUSrc,
 	RegWrite,
-	
+	Rt_Rd,
+	Halt,
 	//input
-	opcode,
-	func
+	opcode
 );
 
-	output RegDst;
-	output Jump;
-	output Branch;
-	output MemRead;
-  output MemtoReg;
-	output [4:0] ALUOp,
-	output MemWrite
-	output ALUSrc,
-	output RegWrite,
-	
-	input [4:0] ins;
+	output reg RegDst;
+	output reg Jump;
+	output reg Branch;
+	output reg MemRead;
+        output reg MemtoReg;
+	output reg[4:0] ALUOp;
+	output reg MemWrite;
+	output reg ALUSrc;
+	output reg RegWrite;
+	output reg Rt_Rd;
+	output reg Halt;
+	input [4:0] opcode;
 	
 	//TODO - question: assign here and update in case?
 	//how to do case do nothing
@@ -46,7 +47,8 @@ module control(
 		MemWrite = 1'b0;
 		ALUSrc = 1'b0;
 		RegWrite = 1'b0;
-	
+	        Rt_Rd = 1'b0;
+	        Halt = 1'b0;
 		case(opcode)
 			5'b00000 : //TODO - HALT_1/38
 			begin	
@@ -59,7 +61,8 @@ module control(
 				MemWrite = 1'b0;
 				ALUSrc = 1'b0;
 				RegWrite = 1'b0;
-			end
+				Halt = 1'b1;	
+		end
 
 			5'b00001 : //TODO - NOP_2/38
 			begin	
@@ -136,7 +139,7 @@ module control(
 				ALUOp = 5'b10100;
 				MemWrite = 1'b0;
 				ALUSrc = 1'b0;
-				RegWrite = 1'
+				RegWrite = 1'b1;
 			end
 
 			5'b10101 : //SLLI_8/38
@@ -189,6 +192,7 @@ module control(
 				MemWrite = 1'b1;
 				ALUSrc = 1'b0;
 				RegWrite = 1'b0;
+				Rt_Rd = 1'b1;
 			end
 
 			5'b10001 : //LD_12/38
@@ -202,6 +206,7 @@ module control(
 				MemWrite = 1'b0;
 				ALUSrc = 1'b0;
 				RegWrite = 1'b1;
+				
 			end
 
 			5'b10011 : //STU_13/38
@@ -215,6 +220,7 @@ module control(
 				MemWrite = 1'b1;
 				ALUSrc = 1'b0;
 				RegWrite = 1'b1;
+				Rt_Rd = 1'b1;
 			end
 
 			5'b11001 : //BTR_14/38 -TODO

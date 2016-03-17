@@ -1,4 +1,5 @@
+          //rotate left by 11 bits
 0000 c101 lbi r1, 001
-0002 c201 lbi r2, 001
+0002 c20b lbi r2, 011
 0004 d14c rol r3, r1, r2
 0006 0000 halt

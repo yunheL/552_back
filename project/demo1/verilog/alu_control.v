@@ -1,6 +1,7 @@
-mdule alu_control(
+module alu_control(
   //output
-	alu_op,
+  alu_op,
+  inv_a,
   inv_b,
   cin,
   shamt,
@@ -10,17 +11,18 @@ mdule alu_control(
 
   //input
   opcode,
-  func
+  func,
   immd
 );
 
-  output[2:0] alu_op;
-  output inv_b;
-  output cin;
-  output [3:0] shamt;
-  output flip_1;
-  output flip_2; 
-  output shift; 
+  output reg[2:0] alu_op;
+  output reg inv_a;
+  output reg inv_b;
+  output reg cin;
+  output reg [3:0] shamt;
+  output reg flip_1;
+  output reg flip_2; 
+  output reg shift; 
 
   input [4:0] opcode;
   input [1:0] func;
@@ -28,7 +30,7 @@ mdule alu_control(
 
   always @ *
   begin
-		
+    inv_a = 1'b0;	
     alu_op = 3'b000;
     inv_b = 1'b0;
     cin = 1'b0; 
@@ -305,6 +307,7 @@ mdule alu_control(
 
 			default : 
 			begin
+		inv_a = 1'b0;
     		alu_op = 3'b000;
     		inv_b = 1'b0;
     		cin = 1'b0; 
