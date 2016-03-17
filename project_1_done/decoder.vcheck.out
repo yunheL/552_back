@@ -1,0 +1,11 @@
+Line 18: Case(x) without always
+Line 28: begin without always/case
+Line 36: begin without always/case
+Line 36: Case(x) without always
+Line 57: begin without always/case
+Line 57: Case(x) without always
+Line 85: begin without always/case
+Line 94: begin without always/case
+Line 103: begin without always/case
+Line 103: Case(x) without always
+End of file /u/y/u/yunhe/cs552/project/decoder.v. Hash = -491116119
