@@ -1,0 +1,21 @@
+SIMLOG:: Cycle           4 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle           5 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle           6 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle           7 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     001f
+SIMLOG:: Cycle           8 PC:     zzzz I:     zzzz R: 1   2     001f M: 0 0     001f     001f
+SIMLOG:: Cycle           9 PC:     zzzz I:     zzzz R: 1   1     001f M: 0 0     0000     0000
+SIMLOG:: Cycle          10 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Processor halted
+
+SIMLOG:: sim_cycles          10
+
+SIMLOG:: inst_count           3
+
+SIMLOG:: dcachehit_count           0
+
+SIMLOG:: icachehit_count           0
+
+SIMLOG:: dcachereq_count           0
+
+SIMLOG:: icachereq_count           0
+

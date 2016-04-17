@@ -1,0 +1,5 @@
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/j_0.asm SUCCESS CPI:3.2 CYCLES:13 ICOUNT:4 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/j_1.asm SUCCESS CPI:3.2 CYCLES:13 ICOUNT:4 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/j_2.asm SUCCESS CPI:5.0 CYCLES:10 ICOUNT:2 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/j_3.asm SUCCESS CPI:8.9 CYCLES:9 ICOUNT:1 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/j_4.asm FAILED

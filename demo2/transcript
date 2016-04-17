@@ -1,0 +1,41 @@
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.dff
+# Loading __work.IF_control
+# Loading __work.pc
+# Loading __work.reg16
+# Loading __work.CLA16
+# Loading __work.CLA4
+# Loading __work.pfa
+# Loading __work.memory2c
+# Loading __work.reg16_init
+# Loading __work.ID_control
+# Loading __work.decoder
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.reg_control
+# Loading __work.reg3
+# Loading __work.EX_control
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.alu_control
+# Loading __work.MEM_control
+# Loading __work.WB_control
+# Loading __work.writeback
+# Loading __work.Harzard
+run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 1205 ns  Iteration: 0  Instance: /proc_hier_pbench

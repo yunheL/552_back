@@ -1,0 +1,8 @@
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/bnez_0.asm SUCCESS CPI:5.0 CYCLES:10 ICOUNT:2 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/bnez_2.asm SUCCESS CPI:5.0 CYCLES:10 ICOUNT:2 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/bnez_3.asm SUCCESS CPI:5.0 CYCLES:10 ICOUNT:2 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/bnez_4.asm SUCCESS CPI:5.0 CYCLES:10 ICOUNT:2 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/bnez_5.asm SUCCESS CPI:4.0 CYCLES:12 ICOUNT:3 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/bnez_6.asm FAILED
+v/u/k/a/karu//courses/cs552/spring2013/handouts/testprograms/public/inst_tests/btr_0.asm SUCCESS CPI:2.7 CYCLES:11 ICOUNT:4 IHITRATE: 0 DHITRATE: 0
+
