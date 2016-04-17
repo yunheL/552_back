@@ -32,10 +32,13 @@
 # Loading __work.alu_control
 # Loading __work.MEM_control
 # Loading __work.WB_control
+# Loading __work.mf_data
 # Loading __work.writeback
 # Loading __work.Harzard
+# ** Warning: (vsim-3015) proc.v(187): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'writereg'.
+#         Region: /proc_hier_pbench/DUT/p0/mdata
 run -all
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.ptrace for output
 # ** Note: $finish    : proc_hier_pbench.v(115)
-#    Time: 1205 ns  Iteration: 0  Instance: /proc_hier_pbench
+#    Time: 1505 ns  Iteration: 0  Instance: /proc_hier_pbench

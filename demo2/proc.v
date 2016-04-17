@@ -64,14 +64,22 @@ module proc (/*AUTOARG*/
    wire br_ctl;
    wire [15:0] instStall;
    wire [15:0] wr_instIF;
+
+   //mem_select
+   wire [15:0] regwritedata_m;
+   wire regdst_m, memtoreg_m, compareS_m, btr_m, writereg_m, ld_imm_m, writeR7_m;
+
    
    //forwarding and data hazard control
    wire id_rs_v,id_rt_v,id_rd_v;
    wire ex_rd_v,mem_rd_v;
    wire[15:0] forwarded_read1dataEX,forwarded_read2dataEX,read1dataWB,read2dataWB,read1dataMEM;
-   wire fow_EXID_rs,fow_EXID_rt, fow_MEMID_rs,fow_MEMID_rt;
+   wire fow_EXID_rs_ID,fow_EXID_rt_ID, fow_MEMID_rs_ID,fow_MEMID_rt_ID;
+   wire fow_EXID_rs_EX,fow_EXID_rt_EX, fow_MEMID_rs_EX,fow_MEMID_rt_EX;
    wire[2:0] r1_reg,r2_reg,r_wr,ex_r_wr,mem_r_wr,wb_r_wr;
    wire  stall_q;
+
+   wire[15:0] aluOEX;
    
    dff stal (.q(stall_q),.d(stall),.clk(clk),.rst(rst));
    //stall
@@ -89,9 +97,11 @@ module proc (/*AUTOARG*/
                         haltMEM? 16'h0800 :
                         instIF;
 
+   //IF/ID registers
    reg16_init IFID (.read(instID),.write(wr_instIF),.wr_en(1'b1),.rst(rst),.clk(clk));
-   //Stage ID
-   
+
+
+   //Stage ID   
    ID_control idcont (.Rt_Rd(rt_rd),.Halt(haltID),.opcode(instID[15:11]));
    decoder inst_decode(.inst(instID),.rt(rt),.rs(rs),.rd(rd),.imm(immID),.displacement(displacementID));
    rf_bypass regfile (.read1data(read1dataID), .read2data(read2dataID), .err(err), .clk(clk), .rst(rst), .read1regsel(r1_reg), .read2regsel(r2_reg), .writeregsel(wb_r_wr), .writedata(regwritedata), .write(regwrite));//TODO write
@@ -102,7 +112,7 @@ module proc (/*AUTOARG*/
    
    assign read2sel = (rt_rd)?rd:rt;
    
-   
+   //ID/EX registers
    reg3 rdex(.read(rdEX),.write(rd),.wr_en(1'b1),.rst(rst),.clk(clk));
    reg3 rsex(.read(rsEX),.write(rs),.wr_en(1'b1),.rst(rst),.clk(clk));
    reg3 rwrex(.read(ex_r_wr),.write(r_wr),.wr_en(1'b1),.rst(rst),.clk(clk));
@@ -114,16 +124,24 @@ module proc (/*AUTOARG*/
    reg16 disex (.read(displacementEX),.write(displacementID),.wr_en(1'b1),.rst(rst),.clk(clk));
    dff rdexv(.q(ex_rd_v),.d(id_rd_v),.clk(clk),.rst(rst));
    dff haltex(.q(haltEX),.d(haltID),.clk(clk),.rst(rst));
+
+   dff ex_rs(.q(fow_EXID_rs_EX),.d(fow_EXID_rs_ID),.clk(clk),.rst(rst));
+   dff mem_rs(.q(fow_MEMID_rs_EX),.d(fow_MEMID_rs_ID),.clk(clk),.rst(rst));
+   dff ex_rt(.q(fow_EXID_rt_EX),.d(fow_EXID_rt_ID),.clk(clk),.rst(rst));
+   dff mem_rt(.q(fow_MEMID_rt_EX),.d(fow_MEMID_rt_ID),.clk(clk),.rst(rst));
+ 
+   reg16 aluO_ex(.read(aluOEX),.write(aluOut),.wr_en(1'b1),.rst(rst),.clk(clk));
+
 //   dff regwrid(.q(regwriteEX),.d(regwriteID),.clk(clk),.rst(rst));
 
    //Stage EX
    assign instEX = (stall_q)?instStall:instEX_normal;
    
-   assign forwarded_read1dataEX = (fow_EXID_rs)?read1dataMEM:
-                                (fow_MEMID_rs)?read1dataWB:
+   assign forwarded_read1dataEX = (fow_EXID_rs_EX)? regwritedata_m:
+                                (fow_MEMID_rs_EX)?  regwritedata:
                                 read1dataEX;
-   assign forwarded_read2dataEX = (fow_EXID_rt)?read2dataMEM:
-                                (fow_MEMID_rt)?read2dataWB:
+   assign forwarded_read2dataEX = (fow_EXID_rt_EX)?read2dataMEM:
+                                (fow_MEMID_rt_EX)?read2dataWB:
                                 read2dataEX;
                                 
    EX_control excont (.ALUOp(aluop),.ALUSrc(alusrc),.opcode(instEX[15:11]));
@@ -139,7 +157,7 @@ module proc (/*AUTOARG*/
                 immEX; 
       
                 
-   //regs at EX/MEM stage  
+   //EX/MEM registers
    reg3 rdmem(.read(rdMEM),.write(rdEX),.wr_en(1'b1),.rst(rst),.clk(clk));
    reg3 rsmem(.read(rsMEM),.write(rsEX),.wr_en(1'b1),.rst(rst),.clk(clk));
    reg3 rwrmem(.read(mem_r_wr),.write(ex_r_wr),.wr_en(1'b1),.rst(rst),.clk(clk));
@@ -161,10 +179,15 @@ module proc (/*AUTOARG*/
 
    //stage MEM
    MEM_control memcont (.MemRead(memread),.MemWrite(memwrite),.opcode(instMEM[15:11]));
-   
+   WB_control mem_wbcntl(.MemtoReg(memtoreg_m),.RegWrite(regwrite_m),.ld_imm(ld_imm_m),.compareS(compareS_m),.btr(btr_m),.writeR7(writeR7_m),.opcode(instMEM[15:11]),.RegDst(regdst_m));
+
+ 
    memory2c data_mem(.data_out(mem_out), .data_in(read2dataMEM), .addr(aluOutMEM), .enable(memread|memwrite), .wr(memwrite), .createdump(), .clk(clk), .rst(rst)); 
+
+   mf_data mdata(.rd(rdMEM),.rs(rsMEM),.regdst(regdst_m),.memtoreg(memtoreg_m),.slbi(slbi),.compareS(compareS_m),.btr_cntl(btr_m),.aluOut(aluOutMEM),.mem_out(mem_out),.alu_out(aluOutMEM),.imm(immMEM),.writereg(writereg_m),.ofl(oflMEM),.zero(zeroMEM),.N(NMEM),.P(PMEM),.inst(instMEM),.ld_imm(ld_imm_m),.regwritedata(regwritedata_m));
+ 
    
-   
+   //MEM/WB registers
    reg3 rdwb(.read(rdWB),.write(rdMEM),.wr_en(1'b1),.rst(rst),.clk(clk));
    reg3 rswb(.read(rsWB),.write(rsMEM),.wr_en(1'b1),.rst(rst),.clk(clk));
    reg3 rwrwb(.read(wb_r_wr),.write(mem_r_wr),.wr_en(1'b1),.rst(rst),.clk(clk));
@@ -189,10 +212,10 @@ module proc (/*AUTOARG*/
    
 
 
-    writeback wback (.rd(rdWB),.rs(rsWB),.regdst(regdst),.memtoreg(memtoreg),.slbi(slbi),.compareS(compareS),.btr_cntl(btr),.aluOut(aluOutWB),.mem_out(mem_out),.alu_out(aluOutWB),.imm(immWB),.writereg(writereg),.ofl(oflWB),.zero(zeroWB),.N(NWB),.P(PWB),.inst(instWB),.ld_imm(ld_imm),.regwritedata(regwritedata));
+    writeback wback (.rd(rdWB),.rs(rsWB),.regdst(regdst),.memtoreg(memtoreg),.slbi(slbi),.compareS(compareS),.btr_cntl(btr),.aluOut(aluOutWB),.mem_out(mem_outWB),.alu_out(aluOutWB),.imm(immWB),.writereg(writereg),.ofl(oflWB),.zero(zeroWB),.N(NWB),.P(PWB),.inst(instWB),.ld_imm(ld_imm),.regwritedata(regwritedata));
    
    //hazard
-   Harzard HDU (.ID_rs(r1_reg), .ID_rt(r2_reg), .EX_rd(ex_r_wr),.MEM_rd(mem_r_wr),.ID_rs_v(id_rs_v), .ID_rt_v(id_rt_v), .EX_rd_v(ex_rd_v),.MEM_rd_v(mem_rd_v),.EX_inst(instEX),.fow_EXID_rs(fow_EXID_rs),.fow_EXID_rt(fow_EXID_rt),. fow_MEMID_rs(fow_MEMID_rs),.fow_MEMID_rt(fow_MEMID_rt),.stall(stall),.rst(rst),.clk(clk));
+   Harzard HDU (.ID_rs(r1_reg), .ID_rt(r2_reg), .EX_rd(ex_r_wr),.MEM_rd(mem_r_wr),.ID_rs_v(id_rs_v), .ID_rt_v(id_rt_v), .EX_rd_v(ex_rd_v),.MEM_rd_v(mem_rd_v),.EX_inst(instEX),.fow_EXID_rs(fow_EXID_rs_ID),.fow_EXID_rt(fow_EXID_rt_ID),. fow_MEMID_rs(fow_MEMID_rs_ID),.fow_MEMID_rt(fow_MEMID_rt_ID),.stall(stall),.rst(rst),.clk(clk));
    
 endmodule // proc
 // DUMMY LINE FOR REV CONTROL :0:
