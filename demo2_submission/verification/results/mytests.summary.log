@@ -1,0 +1,2 @@
+/u/y/u/yunhe/cs552/mytests/branch_prediction_test.asm SUCCESS CPI:3.0 CYCLES:12 ICOUNT:4 IHITRATE: 0 DHITRATE: 0
+/u/y/u/yunhe/cs552/mytests/forwarding_test.asm SUCCESS CPI:2.2 CYCLES:13 ICOUNT:6 IHITRATE: 0 DHITRATE: 0
