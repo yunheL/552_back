@@ -1,0 +1,7 @@
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/perf/Ackermann.asm FAILED
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/perf/Primes.asm FAILED
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/perf/branchPrediction.asm SUCCESS CPI:6.7 CYCLES:515 ICOUNT:77 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/perf/bubbleSort.asm FAILED
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/perf/cache_thrash.asm SUCCESS CPI:6.3 CYCLES:22066 ICOUNT:3502 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/perf/cache_thrash2.asm SUCCESS CPI:13.4 CYCLES:34358 ICOUNT:2570 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/perf/fib.asm SUCCESS CPI:6.5 CYCLES:1180 ICOUNT:182 IHITRATE: 0 DHITRATE: 0

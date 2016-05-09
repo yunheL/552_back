@@ -1,0 +1,2 @@
+/u/y/u/yunhe/Documents/demo3/demo3_pre_sub/verification/mytests/branch_prediction_test.asm SUCCESS CPI:13.6 CYCLES:41 ICOUNT:3 IHITRATE: 0 DHITRATE: 0
+/u/y/u/yunhe/Documents/demo3/demo3_pre_sub/verification/mytests/forwarding_test.asm SUCCESS CPI:8.8 CYCLES:44 ICOUNT:5 IHITRATE: 0 DHITRATE: 0
